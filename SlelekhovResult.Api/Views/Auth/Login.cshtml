@@ -1,0 +1,22 @@
+﻿@model ShelekhovResult.DataBase.Models.LoginDto
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Авторизация</h2>
+<form method="post">
+    <div>
+        <label for="UserDomainName">Имя пользователя</label>
+        <input type="text" id="UserDomainName" name="UserDomainName" required />
+    </div>
+    <button type="submit">Войти</button>
+</form>
+
+@if (ViewData.ModelState.ErrorCount > 0)
+{
+<div style="color: red;">
+    Ошибка авторизации. Попробуйте снова.
+</div>
+}

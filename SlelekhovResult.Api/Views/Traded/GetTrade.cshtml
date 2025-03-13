@@ -1,0 +1,16 @@
+﻿@model ShelekhovResult.DataBase.Models.Trade
+
+<h2>Trade Details</h2>
+
+@if (Model != null)
+{
+    <div>
+        <p><strong>Сумма:</strong> @Model.Amount</p>
+        <p><strong>Дата и время:</strong> @Model.CreatedAt</p>
+        <!-- Add more fields as needed -->
+    </div>
+}
+else
+{
+    <p>No trade data available.</p>
+}
