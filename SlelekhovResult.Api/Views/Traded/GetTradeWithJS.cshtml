@@ -2,6 +2,7 @@
 ViewBag.Title = "title";
 Layout = "_Layout";
 }
+<h2>При помощи JS</h2>
 
 <div id="tradeDetails">
     <p>Загрузка данных...</p>
@@ -10,10 +11,8 @@ Layout = "_Layout";
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const nameClaim = "@Html.Raw(ViewData["NameClaim"])";
-        const apiUrl = `https://localhost:7134/api/trade/latest?userDomainName=${encodeURIComponent(nameClaim)}`; // Кодируем nameClaim
+        const apiUrl = `https://localhost:7134/api/trade/latest?userDomainName=${encodeURIComponent(nameClaim)}`; 
 
-        console.log("Токен из ViewData:", "@ViewData["JwtToken"]");
-        console.log("User Domain Name:", nameClaim);
 
         // Выполняем запрос к API с токеном
         fetch(apiUrl, {

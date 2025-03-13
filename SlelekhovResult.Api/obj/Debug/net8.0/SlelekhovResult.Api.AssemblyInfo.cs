@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SlelekhovResult.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+958718ef3fed5e671b1247d41db10170612aa5e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e39fdedac6e7c72ca2f218a78be82008fdf1fcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SlelekhovResult.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SlelekhovResult.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

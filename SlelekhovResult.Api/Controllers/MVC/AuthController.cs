@@ -47,4 +47,10 @@ public class AuthController : Controller
         ModelState.AddModelError("", "Ошибка авторизации. Попробуйте снова.");
         return View();
     }
+
+    public IActionResult Logout()
+    {
+        Response.Cookies.Delete("JwtToken");
+        return RedirectToAction("Login");
+    }
 }
