@@ -3,7 +3,9 @@ using ShelekhovResult.DataBase.Models;
 using ShelekhovResult.DataBase.Repositories;
 
 namespace SlelekhovResult.Api.Controllers.API;
-
+/// <summary>
+/// API контроллер авторизации
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class AccountController : ControllerBase
@@ -17,6 +19,11 @@ public class AccountController : ControllerBase
         _configuration = configuration;
     }
 
+    /// <summary>
+    /// Авторизация
+    /// </summary>
+    /// <param name="model">ДТО модель авторизации</param>
+    /// <returns>JWT токен</returns>
     [HttpPost]
     public async Task<IActionResult> Login([FromBody] LoginDto model)
     {
@@ -28,6 +35,11 @@ public class AccountController : ControllerBase
         }
 
         var token = TokenManager.GenerateJwtToken(user, _configuration);
+
+        if (token == null)
+        {
+            return BadRequest($"Ошибка генерации токена.");
+        }
         
         return Ok(token);
     }

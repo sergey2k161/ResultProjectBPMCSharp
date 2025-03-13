@@ -5,6 +5,9 @@ using ShelekhovResult.DataBase.Models;
 
 namespace SlelekhovResult.Api.Controllers.MVC;
 
+/// <summary>
+/// MVC контроллер авторизации
+/// </summary>
 public class AuthController : Controller
 {
     private readonly HttpClient _httpClient;
@@ -14,11 +17,20 @@ public class AuthController : Controller
         _httpClient = httpClient;
     }
     
+    /// <summary>
+    /// Контроллер страницы авторизации
+    /// </summary>
+    /// <returns></returns>
     public IActionResult Login()
     {
         return View();
     }
     
+    /// <summary>
+    /// Контроллер для атворизации
+    /// </summary>
+    /// <param name="model">ДТО модели авторизации</param>
+    /// <returns></returns>
     [HttpPost]
     public async Task<IActionResult> Login(LoginDto model)
     {
@@ -48,6 +60,10 @@ public class AuthController : Controller
         return View();
     }
 
+    /// <summary>
+    /// Контроллер для удаления JWT токена
+    /// </summary>
+    /// <returns></returns>
     public IActionResult Logout()
     {
         Response.Cookies.Delete("JwtToken");

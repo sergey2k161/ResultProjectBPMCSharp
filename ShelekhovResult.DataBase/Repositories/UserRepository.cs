@@ -4,6 +4,9 @@ using ShelekhovResult.DataBase.Models;
 
 namespace ShelekhovResult.DataBase.Repositories;
 
+/// <summary>
+/// Репозиторий пользователя
+/// </summary>
 public class UserRepository : IUserRepository
 {
     private readonly TradeDbContext _context;
@@ -13,13 +16,17 @@ public class UserRepository : IUserRepository
         _context = context;
     }
     
+    /// <summary>
+    /// Запрос на получение пользователя по UserDomainName
+    /// </summary>
+    /// <param name="userDomainName">Логин пользоватедя - Domain\Name.Surname</param>
+    /// <returns></returns>
     public async Task<User?> GetUserByUserDomainName(string userDomainName)
     {
         try
         {
             return await _context.Users
                 .FirstOrDefaultAsync(u => u.UserDomainName == userDomainName);
-            
         }
         catch (Exception)
         {
@@ -27,6 +34,11 @@ public class UserRepository : IUserRepository
         }
     }
 
+    /// <summary>
+    /// Получение последней сделки пользователя
+    /// </summary>
+    /// <param name="user">Пользователь</param>
+    /// <returns></returns>
     public async Task<Trade?> GetLatestTrade(User user)
     {
         try
@@ -40,7 +52,7 @@ public class UserRepository : IUserRepository
                 .OrderByDescending(t => t.CreatedAt)
                 .FirstOrDefault();
         }
-        catch (Exception )
+        catch (Exception)
         {
             return null;
         }

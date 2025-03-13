@@ -1,24 +1,32 @@
-﻿@{
-ViewBag.Title = "title";
-Layout = "_Layout";
-}
+﻿@model ShelekhovResult.DataBase.Models.Trade
+
 <h2>При помощи JS</h2>
 
-<div id="tradeDetails">
-    <p>Загрузка данных...</p>
-</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Сумма</th>
+            <th scope="col">Дата и время</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th id="amount"></th>
+        <th id="createdAt"></th>
+    </tr>
+    </tbody>
+</table>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const nameClaim = "@Html.Raw(ViewData["NameClaim"])";
         const apiUrl = `https://localhost:7134/api/trade/latest?userDomainName=${encodeURIComponent(nameClaim)}`; 
 
-
-        // Выполняем запрос к API с токеном
         fetch(apiUrl, {
             method: "GET",
             headers: {
-                "Authorization": `Bearer ${"@ViewData["JwtToken"]"}` // Используем токен из ViewData
+                "Authorization": `Bearer @ViewData["JwtToken"]` 
             }
         })
             .then(response => {
@@ -28,16 +36,14 @@ Layout = "_Layout";
                 return response.json();
             })
             .then(data => {
-                // Отображаем данные на странице
-                const tradeDetails = document.getElementById("tradeDetails");
-                tradeDetails.innerHTML = `
-            <p><strong>Сумма:</strong> ${data.amount}</p>
-            <p><strong>Дата и время:</strong> ${new Date(data.createdAt).toLocaleString()}</p>
-        `;
+                console.log(data)
+                document.getElementById("amount").textContent = data.amount;
+                document.getElementById("createdAt").textContent = data.createdAt;
             })
             .catch(error => {
                 console.error("Ошибка:", error);
-                document.getElementById("tradeDetails").innerHTML = "<p>Ошибка при загрузке данных.</p>";
+                document.getElementById("amount").textContent = "Данные не известны";
+                document.getElementById("createdAt").textContent = "Данные не известны";
             });
     });
 

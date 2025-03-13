@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShelekhovResult.DataBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9da9bb2688d3a6f7b7c71c4d7c44aba44dc0a593")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShelekhovResult.DataBase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShelekhovResult.DataBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

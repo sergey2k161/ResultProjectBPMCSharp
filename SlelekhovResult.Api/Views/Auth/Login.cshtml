@@ -7,16 +7,16 @@
 
 <h2>Авторизация</h2>
 <form method="post">
-    <div>
+    <div class="mb-4">
         <label for="UserDomainName">Имя пользователя</label>
-        <input type="text" id="UserDomainName" name="UserDomainName" required />
+        <input type="text" class="form-control" id="UserDomainName" name="UserDomainName" placeholder="Domain\Name.Surname" required />
     </div>
-    <button type="submit">Войти</button>
+    <button class="btn btn-primary" type="submit">Войти</button>
 </form>
 
 @if (ViewData.ModelState.ErrorCount > 0)
 {
-<div style="color: red;">
-    Ошибка авторизации. Попробуйте снова.
-</div>
+    <div style="color: red;">
+        Ошибка авторизации. Попробуйте снова.
+    </div>
 }

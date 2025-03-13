@@ -4,11 +4,22 @@
 
 @if (Model != null)
 {
-    <div>
-        <p><strong>Сумма:</strong> @Model.Amount</p>
-        <p><strong>Дата и время:</strong> @Model.CreatedAt</p>
-        <!-- Add more fields as needed -->
-    </div>
+    
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Сумма</th>
+            <th scope="col">Дата и время</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>@Model.Amount</th>
+            <th>@Model.CreatedAt</th>
+        </tr>
+        </tbody>
+    </table>
+    
 }
 else
 {

@@ -5,6 +5,9 @@ using ShelekhovResult.DataBase.Repositories;
 
 namespace SlelekhovResult.Api.Controllers.API;
 
+/// <summary>
+/// API стелки
+/// </summary>
 [Authorize]
 [ApiController]
 [Route("api/[controller]")]
@@ -17,6 +20,11 @@ public class TradeController : ControllerBase
         _userRepository = userRepository;
     }
 
+    /// <summary>
+    /// API последней сделки пользователя 
+    /// </summary>
+    /// <param name="userDomainName">Логин пользователя - Domain\Name.Surname</param>
+    /// <returns></returns>
     [HttpGet("latest")]
     public async Task<IActionResult> GetLatestTrade([FromQuery] string userDomainName)
     {

@@ -1,0 +1,14 @@
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\bin\Debug\net8.0\ConsoleApp.exe
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\bin\Debug\net8.0\ConsoleApp.deps.json
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\bin\Debug\net8.0\ConsoleApp.runtimeconfig.json
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\bin\Debug\net8.0\ConsoleApp.dll
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\bin\Debug\net8.0\ConsoleApp.pdb
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.AssemblyInfoInputs.cache
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.AssemblyInfo.cs
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.csproj.CoreCompileInputs.cache
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.dll
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\refint\ConsoleApp.dll
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.pdb
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.genruntimeconfig.cache
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ref\ConsoleApp.dll
