@@ -34,7 +34,7 @@ public class AuthController : Controller
         var cookieOptions = new CookieOptions
         {
             Expires = DateTime.UtcNow.AddHours(12),
-            HttpOnly = true
+            HttpOnly = false
         };
         
         if (response.IsSuccessStatusCode)

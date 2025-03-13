@@ -1,0 +1,45 @@
+﻿@{
+ViewBag.Title = "title";
+Layout = "_Layout";
+}
+
+<div id="tradeDetails">
+    <p>Загрузка данных...</p>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const nameClaim = "@Html.Raw(ViewData["NameClaim"])";
+        const apiUrl = `https://localhost:7134/api/trade/latest?userDomainName=${encodeURIComponent(nameClaim)}`; // Кодируем nameClaim
+
+        console.log("Токен из ViewData:", "@ViewData["JwtToken"]");
+        console.log("User Domain Name:", nameClaim);
+
+        // Выполняем запрос к API с токеном
+        fetch(apiUrl, {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer ${"@ViewData["JwtToken"]"}` // Используем токен из ViewData
+            }
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Ошибка при загрузке данных");
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Отображаем данные на странице
+                const tradeDetails = document.getElementById("tradeDetails");
+                tradeDetails.innerHTML = `
+            <p><strong>Сумма:</strong> ${data.amount}</p>
+            <p><strong>Дата и время:</strong> ${new Date(data.createdAt).toLocaleString()}</p>
+        `;
+            })
+            .catch(error => {
+                console.error("Ошибка:", error);
+                document.getElementById("tradeDetails").innerHTML = "<p>Ошибка при загрузке данных.</p>";
+            });
+    });
+
+</script>

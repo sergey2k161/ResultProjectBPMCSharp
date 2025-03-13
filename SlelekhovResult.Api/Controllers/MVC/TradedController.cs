@@ -52,5 +52,29 @@ public class TradedController : Controller
 
         return View("Error"); // Show an error page if something went wrong
     }
-    
+
+    public async Task<IActionResult> GetTradeWithJS()
+    {
+        // Read the JWT token from the cookie
+        var token = Request.Cookies["JwtToken"];
+
+        if (string.IsNullOrEmpty(token))
+        {
+            return RedirectToAction("Login", "Account"); // Redirect to the login page if the token is missing
+        }
+
+        // Decode the token and extract the "name" claim
+        var handler = new JwtSecurityTokenHandler();
+        var jwtToken = handler.ReadJwtToken(token);
+
+        var nameClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "name")?.Value;
+        
+        // Экранируем обратный слэш
+        var escapedNameClaim = nameClaim.Replace("\\", "\\\\");
+        
+        ViewData["JwtToken"] = token; // Сохраняем токен в ViewData
+        ViewData["NameClaim"] = escapedNameClaim; // Сохраняем nameClaim (userDomainName) в ViewData
+        
+        return View("GetTradeWithJS");
+    }
 }
