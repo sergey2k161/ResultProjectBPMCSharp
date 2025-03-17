@@ -1,10 +1,13 @@
-﻿namespace ShelekhovResult.DataBase.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ShelekhovResult.DataBase.Models;
 
 /// <summary>
 /// Модель Сделок
 /// </summary>
 public class Data
 {
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public Guid Id { get; set; }
     
     public Guid UserId { get; set; }

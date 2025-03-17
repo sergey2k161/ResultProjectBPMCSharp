@@ -20,6 +20,14 @@ public class TradeDbContext : DbContext
         builder.Entity<User>()
             .HasKey(u => u.Id);
 
+        builder.Entity<User>()
+            .Property(u => u.Id)
+            .HasDefaultValueSql("NEWID()");
+        
+        builder.Entity<Data>()
+            .Property(u => u.Id)
+            .HasDefaultValueSql("NEWID()");
+
         builder.Entity<Data>()
             .HasKey(d => d.Id);
         
