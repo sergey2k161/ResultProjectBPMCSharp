@@ -170,6 +170,7 @@ G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\She
 G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\ShelekhovResult.DataBase.AssemblyInfoInputs.cache
 G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\ShelekhovResult.DataBase.AssemblyInfo.cs
 G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\ShelekhovResult.DataBase.csproj.CoreCompileInputs.cache
+G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\ShelekhovResult.DataBase.sourcelink.json
 G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\Shelekho.F4520BDC.Up2Date
 G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\ShelekhovResult.DataBase.dll
 G:\All Projects\C#\ShelekhovResult\ShelekhovResult.DataBase\obj\Debug\net8.0\refint\ShelekhovResult.DataBase.dll

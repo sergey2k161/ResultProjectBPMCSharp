@@ -7,6 +7,7 @@ G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.Genera
 G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.AssemblyInfoInputs.cache
 G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.AssemblyInfo.cs
 G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.csproj.CoreCompileInputs.cache
+G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.sourcelink.json
 G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.dll
 G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\refint\ConsoleApp.dll
 G:\All Projects\C#\ShelekhovResult\ConsoleApp\obj\Debug\net8.0\ConsoleApp.pdb

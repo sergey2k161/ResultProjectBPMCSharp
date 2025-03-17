@@ -11,6 +11,7 @@ G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Slelekho
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\SlelekhovResult.Api.pdb
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Azure.Core.dll
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Azure.Identity.dll
+G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
@@ -89,6 +90,7 @@ G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\Slelekho
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\SlelekhovResult.Api.MvcApplicationPartsAssemblyInfo.cache
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\SlelekhovResult.Api.RazorAssemblyInfo.cache
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\SlelekhovResult.Api.RazorAssemblyInfo.cs
+G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\SlelekhovResult.Api.sourcelink.json
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\staticwebassets.build.json
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\staticwebassets.development.json
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\staticwebassets\msbuild.SlelekhovResult.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -105,4 +107,3 @@ G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\refint\S
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\SlelekhovResult.Api.pdb
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\SlelekhovResult.Api.genruntimeconfig.cache
 G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\obj\Debug\net8.0\ref\SlelekhovResult.Api.dll
-G:\All Projects\C#\ShelekhovResult\SlelekhovResult.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
